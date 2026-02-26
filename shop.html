@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Bilal's LuxeCart</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .shop-header {
+            height: 300px;
+            background: linear-gradient(135deg, rgba(10,10,10,0.8), rgba(10,10,10,0.9)), url('https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-top: 80px;
+        }
+        
+        .shop-header h1 {
+            font-size: 50px;
+            margin-bottom: 15px;
+        }
+        
+        .shop-header h1 span {
+            color: var(--gold);
+        }
+        
+        .shop-layout {
+            display: grid;
+            grid-template-columns: 250px 1fr;
+            gap: 30px;
+            padding: 50px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .filters {
+            background: var(--dark);
+            padding: 30px;
+            border-radius: 20px;
+            height: fit-content;
+            position: sticky;
+            top: 100px;
+        }
+        
+        .filter-section {
+            margin-bottom: 30px;
+        }
+        
+        .filter-section h3 {
+            color: var(--gold);
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+        
+        .filter-section ul {
+            list-style: none;
+        }
+        
+        .filter-section ul li {
+            margin-bottom: 10px;
+        }
+        
+        .filter-section ul li label {
+            color: var(--gray);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .filter-section ul li input[type="checkbox"] {
+            accent-color: var(--gold);
+        }
+        
+        .price-range {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        
+        .price-range input {
+            width: 100%;
+            accent-color: var(--gold);
+        }
+        
+        .shop-toolbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+            background: var(--dark);
+            padding: 15px 20px;
+            border-radius: 10px;
+        }
+        
+        .sort-select {
+            padding: 10px 20px;
+            background: var(--black);
+            border: 1px solid var(--glass-border);
+            color: var(--white);
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        .sort-select:focus {
+            outline: none;
+            border-color: var(--gold);
+        }
+        
+        @media (max-width: 768px) {
+            .shop-layout {
+                grid-template-columns: 1fr;
+            }
+            
+            .filters {
+                position: static;
+            }
+            
+            .shop-header h1 {
+                font-size: 36px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="logo">BILAL'S LUXE</div>
+        <div class="nav-menu">
+            <a href="index.html">Home</a>
+            <a href="shop.html">Men</a>
+            <a href="shop.html">Women</a>
+            <a href="shop.html">Cosmetics</a>
+            <a href="index.html#sale">Sale</a>
+        </div>
+        <div class="nav-icons">
+            <i class="fas fa-search" id="searchIcon"></i>
+            <i class="far fa-user"></i>
+            <i class="far fa-heart"></i>
+            <i class="fas fa-shopping-bag"></i>
+        </div>
+    </nav>
+
+    <!-- SHOP HEADER -->
+    <section class="shop-header">
+        <div>
+            <h1>Shop <span>Collection</span></h1>
+            <p>Home / Shop</p>
+        </div>
+    </section>
+
+    <!-- SHOP LAYOUT -->
+    <div class="shop-layout">
+        <!-- FILTERS SIDEBAR -->
+        <aside class="filters">
+            <div class="filter-section">
+                <h3>Categories</h3>
+                <ul>
+                    <li><label><input type="checkbox"> Men's Fashion</label></li>
+                    <li><label><input type="checkbox"> Women's Fashion</label></li>
+                    <li><label><input type="checkbox"> Cosmetics</label></li>
+                    <li><label><input type="checkbox"> Accessories</label></li>
+                    <li><label><input type="checkbox"> Sale Items</label></li>
+                </ul>
+            </div>
+            
+            <div class="filter-section">
+                <h3>Price Range</h3>
+                <div class="price-range">
+                    <input type="range" min="0" max="50000" value="25000">
+                    <div style="display: flex; justify-content: space-between; color: var(--gray);">
+                        <span>₹0</span>
+                        <span>₹25,000</span>
+                        <span>₹50,000+</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="filter-section">
+                <h3>Size</h3>
+                <ul>
+                    <li><label><input type="checkbox"> XS</label></li>
+                    <li><label><input type="checkbox"> S</label></li>
+                    <li><label><input type="checkbox"> M</label></li>
+                    <li><label><input type="checkbox"> L</label></li>
+                    <li><label><input type="checkbox"> XL</label></li>
+                    <li><label><input type="checkbox"> XXL</label></li>
+                </ul>
+            </div>
+            
+            <div class="filter-section">
+                <h3>Color</h3>
+                <ul>
+                    <li><label><input type="checkbox"> Black</label></li>
+                    <li><label><input type="checkbox"> White</label></li>
+                    <li><label><input type="checkbox"> Gold</label></li>
+                    <li><label><input type="checkbox"> Red</label></li>
+                    <li><label><input type="checkbox"> Blue</label></li>
+                </ul>
+            </div>
+            
+            <button class="btn btn-primary" style="width: 100%;">Apply Filters</button>
+        </aside>
+
+        <!-- PRODUCTS SECTION -->
+        <div>
+            <!-- TOOLBAR -->
+            <div class="shop-toolbar">
+                <p>Showing 1-12 of 48 products</p>
+                <select class="sort-select">
+                    <option>Sort by: Featured</option>
+                    <option>Price: Low to High</option>
+                    <option>Price: High to Low</option>
+                    <option>Newest First</option>
+                    <option>Best Selling</option>
+                </select>
+            </div>
+
+            <!-- PRODUCTS GRID -->
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <span class="product-badge">New</span>
+                    <div class="product-wishlist"><i class="far fa-heart"></i></div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Product">
+                        <div class="product-actions">
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Men's Fashion</div>
+                        <h3 class="product-name">Premium Leather Jacket</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(124)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">₹8,999</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="product-wishlist"><i class="far fa-heart"></i></div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Product">
+                        <div class="product-actions">
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Women's Fashion</div>
+                        <h3 class="product-name">Designer Handbag</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(89)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">₹12,499</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add more products as needed - copy from index.html -->
+            </div>
+
+            <!-- PAGINATION -->
+            <div style="display: flex; justify-content: center; gap: 10px; margin-top: 50px;">
+                <button class="btn btn-secondary" style="padding: 10px 20px;">1</button>
+                <button class="btn btn-secondary" style="padding: 10px 20px;">2</button>
+                <button class="btn btn-secondary" style="padding: 10px 20px;">3</button>
+                <button class="btn btn-secondary" style="padding: 10px 20px;">4</button>
+                <button class="btn btn-secondary" style="padding: 10px 20px;">5</button>
+                <button class="btn btn-primary" style="padding: 10px 20px;">Next</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-col">
+                <h3>BILAL'S LUXE</h3>
+                <p>Redefining luxury fashion and cosmetics for the modern trendsetter. Premium quality, authentic products, worldwide shipping.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Shipping Info</a></li>
+                    <li><a href="#">Returns Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Categories</h3>
+                <ul>
+                    <li><a href="#">Men's Fashion</a></li>
+                    <li><a href="#">Women's Fashion</a></li>
+                    <li><a href="#">Cosmetics</a></li>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Sale</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact Info</h3>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> Mumbai, India</li>
+                    <li><i class="fas fa-phone"></i> +91 98765 43210</li>
+                    <li><i class="fas fa-envelope"></i> care@bilalsluxe.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Bilal's LuxeCart. All rights reserved. Luxury Redefined.</p>
+        </div>
+    </footer>
+
+    <!-- WHATSAPP FLOATING BUTTON -->
+    <a href="https://wa.me/919876543210?text=Hi!%20I'm%20interested%20in%20your%20luxury%20collection" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

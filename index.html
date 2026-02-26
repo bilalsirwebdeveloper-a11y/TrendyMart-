@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilal's LuxeCart - Premium Fashion & Cosmetics</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- LOADING ANIMATION -->
+    <div class="loader" id="loader">
+        <div class="loader-spinner"></div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="logo">BILAL'S LUXE</div>
+        <div class="nav-menu">
+            <a href="index.html">Home</a>
+            <a href="shop.html">Men</a>
+            <a href="shop.html">Women</a>
+            <a href="shop.html">Cosmetics</a>
+            <a href="#sale">Sale</a>
+        </div>
+        <div class="nav-icons">
+            <i class="fas fa-search" id="searchIcon"></i>
+            <i class="far fa-user"></i>
+            <i class="far fa-heart"></i>
+            <i class="fas fa-shopping-bag"></i>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-subtitle">NEW ARRIVALS 2026</div>
+            <h1 class="hero-title">Redefine Your <span>Style</span></h1>
+            <p class="hero-desc">Discover the perfect blend of luxury and attitude. Premium fashion and cosmetics for the modern trendsetter.</p>
+            <div class="hero-buttons">
+                <a href="shop.html" class="btn btn-primary">Shop Now</a>
+                <a href="#collections" class="btn btn-secondary">Explore Collection</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section class="section">
+        <div class="section-title">
+            <h2>The <span>Bilal's</span> Promise</h2>
+            <p>Experience luxury like never before</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <i class="fas fa-rocket"></i>
+                <h3>Lightning Delivery</h3>
+                <p>2-3 Days guaranteed delivery across all major cities</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-gem"></i>
+                <h3>100% Authentic</h3>
+                <p>Sourced directly from global luxury brands</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-undo-alt"></i>
+                <h3>Easy Returns</h3>
+                <p>15-day hassle-free return policy</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-lock"></i>
+                <h3>Secure Checkout</h3>
+                <p>SSL encrypted & PCI compliant payments</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FLASH SALE -->
+    <section class="flash-sale">
+        <h2 style="font-size: 36px; margin-bottom: 20px;">FLASH SALE</h2>
+        <p style="font-size: 18px; margin-bottom: 30px;">Up to 50% Off on Luxury Collection</p>
+        
+        <div class="countdown">
+            <div class="countdown-item">
+                <span id="days">00</span>
+                <p>Days</p>
+            </div>
+            <div class="countdown-item">
+                <span id="hours">00</span>
+                <p>Hours</p>
+            </div>
+            <div class="countdown-item">
+                <span id="minutes">00</span>
+                <p>Minutes</p>
+            </div>
+            <div class="countdown-item">
+                <span id="seconds">00</span>
+                <p>Seconds</p>
+            </div>
+        </div>
+
+        <div class="products-grid" style="margin-top: 50px;">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <span class="product-badge">-40%</span>
+                <div class="product-wishlist"><i class="far fa-heart"></i></div>
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Product">
+                    <div class="product-actions">
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Men's Fashion</div>
+                    <h3 class="product-name">Premium Leather Jacket</h3>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>(124)</span>
+                    </div>
+                    <div class="product-price">
+                        <span class="current-price">₹8,999</span>
+                        <span class="old-price">₹14,999</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <span class="product-badge">-30%</span>
+                <div class="product-wishlist"><i class="far fa-heart"></i></div>
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Product">
+                    <div class="product-actions">
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Women's Fashion</div>
+                    <h3 class="product-name">Designer Handbag</h3>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(89)</span>
+                    </div>
+                    <div class="product-price">
+                        <span class="current-price">₹12,499</span>
+                        <span class="old-price">₹17,999</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+                <span class="product-badge">-25%</span>
+                <div class="product-wishlist"><i class="far fa-heart"></i></div>
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Product">
+                    <div class="product-actions">
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Cosmetics</div>
+                    <h3 class="product-name">Luxury Perfume Set</h3>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <span>(56)</span>
+                    </div>
+                    <div class="product-price">
+                        <span class="current-price">₹5,999</span>
+                        <span class="old-price">₹7,999</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-card">
+                <span class="product-badge">-50%</span>
+                <div class="product-wishlist"><i class="far fa-heart"></i></div>
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1612816319946-7b0e8f06f6cf?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Product">
+                    <div class="product-actions">
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Accessories</div>
+                    <h3 class="product-name">Gold Plated Watch</h3>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>(203)</span>
+                    </div>
+                    <div class="product-price">
+                        <span class="current-price">₹15,999</span>
+                        <span class="old-price">₹31,999</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW ARRIVALS -->
+    <section class="section">
+        <div class="section-title">
+            <h2>New <span>Arrivals</span></h2>
+            <p>Be the first to rock the latest trends</p>
+        </div>
+
+        <div class="products-grid">
+            <!-- Product 5 -->
+            <div class="product-card">
+                <div class="product-wishlist"><i class="far fa-heart"></i></div>
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Product">
+                    <div class="product-actions">
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Men's Fashion</div>
+                    <h3 class="product-name">Casual Blazer</h3>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(45)</span>
+                    </div>
+                    <div class="product-price">
+                        <span class="current-price">₹7,499</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="product-card">
+                <div class="product-wishlist"><i class="far fa-heart"></i></div>
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1518621736915-f3b1c41bfd00?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Product">
+                    <div class="product-actions">
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Cosmetics</div>
+                    <h3 class="product-name">Matte Lipstick Set</h3>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>(78)</span>
+                    </div>
+                    <div class="product-price">
+                        <span class="current-price">₹2,499</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 7 -->
+            <div class="product-card">
+                <div class="product-wishlist"><i class="far fa-heart"></i></div>
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Product">
+                    <div class="product-actions">
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Women's Fashion</div>
+                    <h3 class="product-name">Silk Evening Gown</h3>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <span>(34)</span>
+                    </div>
+                    <div class="product-price">
+                        <span class="current-price">₹18,999</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 8 -->
+            <div class="product-card">
+                <div class="product-wishlist"><i class="far fa-heart"></i></div>
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1612816319946-7b0e8f06f6cf?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Product">
+                    <div class="product-actions">
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Accessories</div>
+                    <h3 class="product-name">Designer Sunglasses</h3>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(112)</span>
+                    </div>
+                    <div class="product-price">
+                        <span class="current-price">₹4,999</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INSTAGRAM GALLERY -->
+    <section class="section" style="padding-top: 0;">
+        <div class="section-title">
+            <h2>#BilalStyle <span>On Insta</span></h2>
+            <p>Tag us to get featured</p>
+        </div>
+
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Gallery">
+                <div class="gallery-overlay">
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Gallery">
+                <div class="gallery-overlay">
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Gallery">
+                <div class="gallery-overlay">
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Gallery">
+                <div class="gallery-overlay">
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1445205170230-053b83016050?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Gallery">
+                <div class="gallery-overlay">
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Gallery">
+                <div class="gallery-overlay">
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="section" style="background: var(--dark);">
+        <div class="section-title">
+            <h2>Customer <span>Reviews</span></h2>
+            <p>What our luxury clients say</p>
+        </div>
+
+        <div class="testimonials-slider" id="testimonialSlider">
+            <div class="testimonial-card">
+                <div class="testimonial-img">
+                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Customer">
+                </div>
+                <p class="testimonial-text">"The quality is unmatched. Feels like a million bucks. Bilal's Luxe is now my go-to for luxury fashion."</p>
+                <h4 class="testimonial-name">Aryan K.</h4>
+                <div class="testimonial-verified">
+                    <i class="fas fa-check-circle"></i> Verified Buyer
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="newsletter">
+        <h2>Join The <span style="color: var(--gold);">Luxury Club</span></h2>
+        <p>Subscribe for exclusive offers, early access, and 10% off your first order</p>
+        <div class="newsletter-form">
+            <input type="email" placeholder="Your email address">
+            <button type="submit">Subscribe</button>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-col">
+                <h3>BILAL'S LUXE</h3>
+                <p>Redefining luxury fashion and cosmetics for the modern trendsetter. Premium quality, authentic products, worldwide shipping.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Shipping Info</a></li>
+                    <li><a href="#">Returns Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Categories</h3>
+                <ul>
+                    <li><a href="#">Men's Fashion</a></li>
+                    <li><a href="#">Women's Fashion</a></li>
+                    <li><a href="#">Cosmetics</a></li>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Sale</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact Info</h3>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> Mumbai, India</li>
+                    <li><i class="fas fa-phone"></i> +91 98765 43210</li>
+                    <li><i class="fas fa-envelope"></i> care@bilalsluxe.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Bilal's LuxeCart. All rights reserved. Luxury Redefined.</p>
+        </div>
+    </footer>
+
+    <!-- WHATSAPP FLOATING BUTTON -->
+    <a href="https://wa.me/919876543210?text=Hi!%20I'm%20interested%20in%20your%20luxury%20collection" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- JAVASCRIPT -->
+    <script src="js/script.js"></script>
+</body>
+</html>
