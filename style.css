@@ -1,0 +1,137 @@
+body{
+margin:0;
+font-family:Poppins;
+background:#0b0b0b;
+color:white;
+}
+
+/* Navbar */
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+background:rgba(0,0,0,0.8);
+backdrop-filter:blur(10px);
+position:sticky;
+top:0;
+z-index:999;
+}
+
+.logo{
+color:gold;
+font-size:28px;
+font-weight:bold;
+}
+
+.navbar input{
+padding:8px;
+width:220px;
+border-radius:20px;
+border:none;
+}
+
+/* Hero */
+
+.hero{
+height:90vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+
+background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),
+url("https://via.placeholder.com/1600x900");
+
+background-size:cover;
+}
+
+.shop-btn{
+background:gold;
+padding:15px 35px;
+color:black;
+text-decoration:none;
+border-radius:30px;
+margin-top:20px;
+transition:.4s;
+}
+
+.shop-btn:hover{
+transform:scale(1.1);
+}
+
+/* Products */
+
+.products-section{
+padding:80px;
+text-align:center;
+}
+
+.title{
+color:gold;
+font-size:40px;
+}
+
+.product-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:30px;
+margin-top:50px;
+}
+
+.card{
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(8px);
+padding:20px;
+border-radius:20px;
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-12px);
+box-shadow:0 0 25px gold;
+}
+
+.card img{
+width:100%;
+border-radius:15px;
+}
+
+.card button{
+width:100%;
+padding:10px;
+margin-top:15px;
+background:gold;
+border:none;
+cursor:pointer;
+}
+
+/* WhatsApp Button */
+
+.whatsapp{
+position:fixed;
+bottom:30px;
+right:30px;
+font-size:35px;
+}
+
+/* Footer */
+
+footer{
+text-align:center;
+padding:25px;
+background:black;
+}
+
+/* Animation */
+
+.card{
+animation:fadeIn 1s;
+}
+
+@keyframes fadeIn{
+from{opacity:0; transform:translateY(40px);}
+to{opacity:1;}
+}
