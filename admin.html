@@ -11,13 +11,12 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
-    <!-- Firebase SDK (IMPORTANT: Pehle yeh load hoga) -->
+    <!-- Firebase SDK (PEHLE LOAD HOGA) -->
     <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore-compat.js"></script>
     
     <style>
-        /* ==================== COMPLETE NEON DESIGN ==================== */
         * {
             margin: 0;
             padding: 0;
@@ -695,7 +694,7 @@
             margin-bottom: 20px;
         }
 
-        /* Free Image Hosting Guide */
+        /* Free Hosting Guide */
         .free-hosting-guide {
             background: rgba(0,245,255,0.1);
             border: 1px solid #00F5FF;
@@ -755,19 +754,17 @@
         </main>
     </div>
 
-    <!-- Firebase Config - YAHAN APNI CONFIG DALO -->
+    <!-- ==================== FIREBASE CONFIG - YAHAN APNI DETAILS DALO ==================== -->
     <script>
-        // ==================== FIREBASE CONFIGURATION ====================
-        // MAREE: YAHAN APNI FIREBASE KI DETAILS DALO
+        // MAREE: YAHAN APNI FIREBASE KI DETAILS DALO (Firebase Console se copy karo)
         const firebaseConfig = {
-  apiKey: "AIzaSyCbpgjPk2ce7igWjfQZsMzDa7fD2iaZMgI",
-  authDomain: "shopeverse-fff80.firebaseapp.com",
-  projectId: "shopeverse-fff80",
-  storageBucket: "shopeverse-fff80.firebasestorage.app",
-  messagingSenderId: "738679244636",
-  appId: "1:738679244636:web:8171f1170cc7f3ec876399",
-  measurementId: "G-45X5GXEDLC"
-};
+            apiKey: "AIzaSyBXXXXXXXXXXXXXXX",  // 🔴 APNI API KEY YAHAN DALO
+            authDomain: "shopverse-xxxxx.firebaseapp.com",  // 🔴 APNA AUTH DOMAIN YAHAN DALO
+            projectId: "shopverse-xxxxx",  // 🔴 APNA PROJECT ID YAHAN DALO
+            storageBucket: "shopverse-xxxxx.appspot.com",  // 🔴 APNA STORAGE BUCKET YAHAN DALO
+            messagingSenderId: "1234567890",  // 🔴 APNA SENDER ID YAHAN DALO
+            appId: "1:1234567890:web:abcdef123456"  // 🔴 APNA APP ID YAHAN DALO
+        };
 
         // Initialize Firebase
         firebase.initializeApp(firebaseConfig);
@@ -786,9 +783,10 @@
             coupons: db.collection('coupons')
         };
 
-        console.log('✅ Firebase initialized successfully');
+        console.log('✅ Firebase initialized successfully in admin panel');
     </script>
 
+    <!-- ==================== MAIN ADMIN JAVASCRIPT ==================== -->
     <script>
         // ==================== GLOBAL VARIABLES ====================
         let currentUser = null;
@@ -992,7 +990,7 @@
                     
                     <!-- FREE IMAGE HOSTING GUIDE -->
                     <div class="free-hosting-guide">
-                        <h4><i class="fas fa-info-circle"></i> FREE Image Hosting (Bina Storage Ke)</h4>
+                        <h4><i class="fas fa-info-circle"></i> 📸 FREE Image Hosting (Bina Storage Ke)</h4>
                         <p style="margin-bottom: 10px;">1. Kisi bhi free site par image upload karo:</p>
                         <p>• <a href="https://imgur.com/upload" target="_blank">Imgur.com</a> - Best for long term</p>
                         <p>• <a href="https://postimages.org/" target="_blank">PostImages.org</a> - Simple & free</p>
@@ -1702,4 +1700,3 @@
     </script>
 </body>
 </html>
-
